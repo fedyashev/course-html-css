@@ -1,0 +1,41 @@
+.container {
+    width: 1000px;
+    margin: 0px auto;
+    background: #CCCCCC;
+}
+
+.container::after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0px;
+    clear: both;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation ul li {
+    float: left;
+}
+
+.logo {
+    float: left;
+}
+
+.navigation {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navigation ul li a {
+    display: block;
+    margin: 10px 10px;
+    text-transform: uppercase;
+}
