@@ -38,14 +38,14 @@
 6. Разбивка макета на блоки (header, main, footer).
 7. Контейнер. Расположение контента по центру страницы.
     width, margin, background
-7. Атрибут style.
+8. Атрибут style.
     >><div style="width: 1000px"></div>
-8. Тэг style.
+9. Тэг style.
     >><style></style>
-9. Подключениие стилей отдельным файлом.
+10. Подключениие стилей отдельным файлом.
     >><link rel="stylesheet" href="./css/index.css">
-8. Разбор верстки header.
-9. Расположение элементов друг относительно друга. Св-во float.
+11. Разбор верстки header.
+12. Расположение элементов друг относительно друга. Св-во float.
     float: left, right;
     margin, padding
 
