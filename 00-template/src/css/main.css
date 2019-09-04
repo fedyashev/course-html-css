@@ -49,16 +49,12 @@ body {
 
 /*HEADER*/
 
-header {
+#header {
   background: #e8ebf1;
-  border-bottom: 1px solid #6ec2ca;
+  border-bottom: 1px solid #d9d9d9;
 }
 
-header .container {
-  
-}
-
-.logo {
+#header .logo {
   float: left;
   margin: 35px 0px;
 }
@@ -177,6 +173,29 @@ header .container {
   color: #2aacc8;
 }
 
-
-
 /*END HEADER*/
+
+/*FOOTER*/
+
+#footer {
+  background: #e8ebf1;
+  border-top: 1px solid #d9d9d9;
+}
+
+.footer-info-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-rights p {
+  margin: 0px;
+  font-size: small;
+  color: #363636;
+}
+
+#footer .logo {
+  flex-grow: 1;
+  text-align: right;
+}
+
+/*END FOOTER*/
