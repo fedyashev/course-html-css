@@ -1,16 +1,11 @@
 html {
-  margin: 0;
-  padding: 0;
   font-family: "Lato", sans-serif;
+  height: 100%;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
+  margin: 0px;
+  height: 100%
 }
 
 .container {
@@ -25,6 +20,32 @@ a {
   height: 0px;
   clear: both;
 }
+
+/*TEMPLATE GRID*/
+
+body {
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr minmax(100px, auto);
+}
+
+#header {
+  grid-area: header;
+}
+
+#main {
+  grid-area: main;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+/*END TEMPLATE GRID*/
 
 /*HEADER*/
 
@@ -45,6 +66,7 @@ header .container {
 .logo a {
   display: block;
   font-size: 36px;
+  text-decoration: none;
 }
 
 .logo-half-1 {
@@ -86,6 +108,7 @@ header .container {
   font-weight: bold;
   padding: 10px;
   color: #000;
+  text-decoration: none;
 }
 
 .submenu-sign::after {
