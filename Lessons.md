@@ -54,3 +54,51 @@
 
 **Задание:** *верстка header*
 
+## Занятие 3
+### План
+1. Fonts. (fonts.goolge.com)
+    - font-family
+    - font-size
+    - font-weight
+    - font-style
+    - text-decoration
+    - text-transform
+2. Common css properties:
+    - border, display
+3. Positions
+    - static
+    - relative
+    - absolute
+    - fixed
+    - sticky
+4. Pseudo classes and elements
+    - :hover, :active, :visited, :focus, :first-child, :last-child
+    - ::after, ::before
+
+### На занятии
+1. Ответы на вопросы:
+    - backgound-image: url("...");
+    - backgroung-repeat: no-repeat;
+    - постановка картинки на фон
+    - прозрачность opacity
+    - float
+2. Разбиение страницы на разделы
+    - header, main, footer
+    - контейнер .contaiter
+    - ul>(li>a)*6
+3. Знакомство со шрифтами
+    - font-family, font-size, font-weight, font-style, text-decoration, text-transform
+    - fonts.google.com
+3. Знакоство с псевдоклассами и псевдоэлементами на примере верстки Header
+    - :hover, :active, :visited, :focus, :first-child, :last-child
+    - ::after, ::before
+    - border, display
+4. Ознакомление с позиционорованием на примерах от MDN
+    - position: static | relative | absolute | fixed | sticky
+
+### на следующее занятие
+- подробный разбор позициониравания.
+- практика по позиционированию.
+- верска выпадающего меню в Header.
+
+**Домашнее задание:** *Верстка Header из макета BisLite. Использование hover.*
