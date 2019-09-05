@@ -30,7 +30,7 @@ body {
   "main"
   "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr minmax(100px, auto);
+  grid-template-rows: auto 1fr auto;
 }
 
 #header {
@@ -185,10 +185,11 @@ body {
 .footer-info-row {
   display: flex;
   flex-direction: row;
+  margin-bottom: 35px;
 }
 
 .footer-rights p {
-  margin: 0px;
+  margin: 8px 0 0 0;
   font-size: small;
   color: #363636;
 }
@@ -196,6 +197,107 @@ body {
 #footer .logo {
   flex-grow: 1;
   text-align: right;
+}
+
+.footer-info-col {
+  flex: 1 1 auto;
+  color: #363636;
+  margin: 0px 30px;
+}
+
+.footer-about-us {
+  width: 230px;
+}
+
+.footer-info-col:first-child {
+  margin-left: 0px;
+}
+
+.footer-info-col:last-child {
+  margin-right: 0px;
+}
+
+.footer-info-col-header {
+  color: #000;
+  margin: 20px 0px;
+}
+
+.f-links-list .footer-info-col-header {
+  margin-bottom: 8px;
+}
+
+.footer-info-col-header a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.footer-info-col-header a:hover {
+  color: #2aacc8;
+}
+
+.footer-into-col-text {
+  font-size: small;
+}
+
+.footer-info-col nav a {
+  display: block;
+  padding: 8px 0px;
+  text-decoration: none;
+  font-size: small;
+  color: #363636;
+}
+
+.footer-info-col nav a:first-child {
+
+}
+
+.footer-info-col nav a:last:child {
+  
+}
+
+.footer-info-col nav a:hover {
+  color: #2aacc8;
+}
+
+.contacts {
+  font-size: small;
+  font-style: normal;
+  color: #363636;
+}
+
+.company-name {
+  font-weight: bold;
+}
+
+.footer-social {
+  width: 190px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0px auto;
+}
+
+.footer-social a:first-child {
+  margin-left: 0px;
+}
+
+.footer-social a:last-child {
+  margin-right: 0px;
+}
+
+.footer-social a img {
+  width: 100%;
+  height: 100%;
 }
 
 /*END FOOTER*/
