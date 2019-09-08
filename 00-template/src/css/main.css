@@ -129,6 +129,7 @@ body {
   border-left: 1px solid #e8ebf1;
   border-right: 1px solid #e8ebf1;
   border-bottom: 1px solid #e8ebf1;
+  z-index: 100;
 }
 
 .submenu::after {
@@ -145,6 +146,7 @@ body {
 
 .menu-item:hover .submenu {
   display: block;
+  transition: 0.5s ease;
 }
 
 .submenu-item {
