@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .menu,
+        .menu-2 {
+            display: flex;
+            margin: 0 auto;
+            width: 700px;
+            height: 150px;
+            background: #939393;
+            border-radius: 5px;
+            list-style: none;
+            padding-left: 0;
+            border: 1px solid #000;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-item,
+        .menu-2-item {
+            width: 100px;
+            height: 100px;
+            background: #D00;
+            border-radius: 50%;
+            border: 1px solid #000;
+        }
+
+        .menu li:nth-child(4) {
+            background: #0d0;
+        }
+
+        .active {
+            border-top: 4px solid #00d;
+        }
+
+        .main {
+            background: #81e4ed;
+            height: 500px;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 1000px;
+        }
+
+        .picture {
+            background: #e05936;
+            height: 440px;
+        }
+
+        .slider {
+            padding-top: 20px;
+        }
+
+        .tabs {
+            width: 140px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .tab {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #71a3a7;
+        }
+        .active-tab {
+            background: #FFF;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <ul class="menu">
+        <li class="menu-item"></li>
+        <li class="menu-item"></li>
+        <li class="menu-item"></li>
+        <li class="menu-item active"></li>
+        <li class="menu-item"></li>
+        <li class="menu-item"></li>
+    </ul>
+
+    <ul class="menu-2">
+        <li class="menu-2-item"></li>
+        <li class="menu-2-item"></li>
+        <li class="menu-2-item"></li>
+        <li class="menu-2-item"></li>
+        <li class="menu-2-item"></li>
+        <li class="menu-2-item"></li>
+    </ul>
+
+    <main class="main">
+        <div class="container">
+            <div class="slider">
+                <div class="picture">
+                    <!-- <img src="#" alt="#"> -->
+                </div>
+                <div class="tabs">
+                    <div class="tab"></div>
+                    <div class="tab"></div>
+                    <div class="tab active-tab"></div>
+                    <div class="tab"></div>
+                    <div class="tab"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
