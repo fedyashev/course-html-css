@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 07 - Forms</title>
+
+    <style>
+        h6 {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/news/0947" method="get">
+
+        <div>
+            <h6>Кнопка</h6>
+            <input type="button" value="Button">
+        </div>
+
+        <div>
+            <h6>Checkbox</h6>
+            <div class="checkbox">
+                <input type="checkbox" id="cb01">
+                <label for="cb01">CSS</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="cb02">
+                <label for="cb02">HTML</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="cb03">
+                <label for="">JS</label>
+            </div>
+        </div>
+
+        <div>
+            <h6>Radio button</h6>
+            <div class="radio-button">
+                <input type="radio" name="radio" id="rb01">
+                <label for="rb01">CSS</label>
+            </div>
+            <div class="radio-button">
+                <input type="radio" name="radio" id="rb02">
+                <label for="rb02">HTML</label>
+            </div>
+            <div class="radio-button">
+                <input type="radio" name="radio" id="rb02">
+                <label for="rb02">JS</label>
+            </div>
+        </div>
+
+        <div>
+            <h6>Поле ввода текста</h6>
+            <input type="text" id="username" placeholder="username" name="username">
+
+            <h6>Поле ввода пароля</h6>
+            <input type="password" name="password">
+
+            <h6></h6>
+            <input type="email" name="email" id="">
+
+            <h6></h6>
+            <input type="number" name="number">
+
+            <h6></h6>
+            <input type="submit" value="enter">
+
+            <input type="color" name="color" id="">
+        </div>
+
+        <div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <select name="" id="">
+                <option value="1">CSS</option>
+                <option value="2">HTML</option>
+                <option value="3">JS</option>
+            </select>
+        </div>
+
+
+    </form>
+</body>
+
+</html>
