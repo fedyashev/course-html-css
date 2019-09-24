@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 06</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 768px;
+            height: 200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid #999;
+            background: #DDD;
+            border-radius: 5px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: #090;
+            border: 1px solid #999;
+            border-radius: 5px;
+        }
+
+        .box--relative {
+            position: relative;
+        }
+
+        .box--relative:nth-child(2) {
+            top: 50px;
+            left: 50px;
+        }
+
+        .container--relative {
+            position: relative;
+        }
+
+        .box--absolute {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: #F00;
+            top: 0px;
+            left: 0px;
+        }
+
+        .image {
+            width: 100%;
+            display: block;
+        }
+
+        .container-image {
+            overflow: hidden;
+        }
+
+        .image-text {
+            font-size: xx-large;
+            color: yellow;
+            background: #090;
+            top: 25%;
+            left: 10%;
+        }
+
+        .image-text--absolute {
+            position: absolute;
+            margin: 80px;
+        }
+
+        .block {
+            width: 200px;
+            border: 1px solid #666;
+            border-radius: 5px;
+        }
+        .block--relative {
+            position: relative;
+            overflow: hidden;
+        }
+        .block--header {
+            display: flex;
+        }
+        .block--background {
+            height: 100%;
+        }
+        .block--content__absolute {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .box--after::after {
+            content: " ";
+            display: block;
+            width: 25px;
+            height: 25px;
+            background: #990;
+            border: #666;
+            border-radius: 5px;
+            position: absolute;
+            top: 0px;
+            left: 100%;
+            /* z-index: 100; */
+        }
+        .box--clip-path {
+            clip-path: polygon(0% 30%, 50% 80%, 100% 30%, 80% 10%, 50% 50%, 20% 10%);
+        }
+        .black-box {
+            width: 100px;
+            height: 100px;
+            background: #000;
+            clip-path: polygon(0% 30%, 50% 80%, 100% 30%, 80% 10%, 50% 50%, 20% 10%);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="container">
+        <div class="box box--relative"></div>
+        <div class="box box--relative"></div>
+        <div class="box box--relative"></div>
+    </div>
+
+    <div class="container container--relative">
+        <div class="box"></div>
+        <div class="box box--absolute"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="container container--relative container-image">
+        <img class="image" src="../00-template/src/img/portfolio-img-02.jpg" alt="">
+        <p class="image-text image-text--absolute">The best!!!</p>
+    </div>
+
+    <div class="block block--relative">
+        <img src="../00-template/src/img/portfolio-img-04.jpg" alt="" class="block--background">
+        <div class="block--content block--content__absolute">
+            <div class="block--header">
+                <img src="../00-template/src/img/social-icon-linkedin.png" alt="" class="block--icon">
+                <h3 class="block--title">Clean theme</h3>
+            </div>
+            <div class="block--description">
+                <p class="block--text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea vel corrupti ex
+                    expedita assumenda illum molestiae minus amet commodi non consequatur maiores beatae culpa ipsum
+                    dolores quae odio, autem corporis.</p>
+            </div>
+            <div class="block--read-more">
+                <a href="#" class="block--link">Read more</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box box--relative box--after box--clip-path"></div>
+    </div>
+
+    <div class="black-box"></div>
+
+    <footer style="background: #666;">
+        <div class="container">
+        ...
+        ...
+        ...s
+        </div>
+    </footer>
+
+</body>
+
+</html>

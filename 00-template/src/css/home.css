@@ -1,0 +1,46 @@
+/* SLIDER */
+
+.slider {
+    height: 480px;
+    background: #81e4ed;
+    padding-top: 20px;
+}
+
+.slide {
+    height: 440px;
+    position: relative;
+    background: #dc5835;
+    display: flex;
+}
+
+.slide--text {
+    font-size: xx-large;
+    font-weight: bold;
+    font-size: 48px;
+    color: #FFF;
+    width: 300px;
+    margin: 0;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.tab {
+    width: 14px;
+    height: 14px;
+    background: #71a3a7;
+    border-radius: 50%;
+    margin: 12px 9px;
+}
+
+.tab__active {
+    background: #FFF;
+}
+
+/* END SLIDER */
