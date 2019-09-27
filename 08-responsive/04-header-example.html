@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 08 - Header exapmle</title>
+
+    <style>
+        .container {
+            height: 150px;
+            background: aqua;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* padding: 0 50px; */
+            width: 1000px;
+            list-style: none;
+        }
+
+        .menu1 {
+            display: none;
+        }
+
+        .menu--link {
+            text-decoration: none;
+        }
+
+        .menu--item:hover .menu1 {
+            display: block;
+        }
+
+        .menu1 {
+            position: absolute;
+        }
+
+        .menu--item {
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo--text">Bislite</h1>
+            </div>
+            <div class="navigation">
+                <ul class="menu">
+                    <li class="menu--item"><a href="#" class="menu--link">Name</a></li>
+                    <li class="menu--item">
+                        <a href="#" class="menu--link">Email</a>
+                        <ul class="menu1">
+                            <li class="menu1--item"><a href="#" class="menu1--link">Contact</a></li>
+                            <li class="menu1--item"><a href="#" class="menu1--link">Data</a></li>
+                            <li class="menu1--item"><a href="#" class="menu1--link">About us</a></li>
+                            <li class="menu1--item"><a href="#" class="menu1--link">Site map</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu--item"><a href="#" class="menu--link">Age</a></li>
+                    <li class="menu--item"><a href="#" class="menu--link">Sex</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

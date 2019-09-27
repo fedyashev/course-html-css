@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #212121;
+        }
+        .container {
+            width: 640px;
+            margin: 0 auto;
+        }
+        .slider--frame {
+            position: relative;
+            height: 300px;
+            border: 1px solid red;
+        }
+        .slider--slide {
+            position: absolute;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .slider--img {
+            width: 100%;
+        }
+        .slider--tab-01:checked ~ .slider--frame > .slider--slide-01,
+        .slider--tab-02:checked ~ .slider--frame > .slider--slide-02,
+        .slider--tab-03:checked ~ .slider--frame > .slider--slide-03 {
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="slider">
+
+            <input class="slider--tab slider--tab-01" type="radio" id="rb01" name="slider">
+            <label for="rb01">1</label>
+
+            <input class="slider--tab slider--tab-02" type="radio" id="rb02" name="slider">
+            <label for="rb02">2</label>
+
+            <input class="slider--tab slider--tab-03" type="radio" id="rb03" name="slider">
+            <label for="rb03">3</label>
+
+            <div class="slider--frame">
+                <div class="slider--slide slider--slide-01">
+                    <img src="../00-template/src/img/portfolio-img-01.jpg" alt="" class="slider--img">
+                </div>
+
+                <div class="slider--slide slider--slide-02">
+                    <img src="../00-template/src/img/portfolio-img-02.jpg" alt="" class="slider--img">
+                </div>
+
+                <div class="slider--slide slider--slide-03">
+                    <img src="../00-template/src/img/portfolio-img-03.jpg" alt="" class="slider--img">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
